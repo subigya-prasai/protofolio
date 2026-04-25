@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Cybersecurity & Data Analytics Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+
+<canvas id="bubble-canvas"></canvas>
+
+
+<nav>
+  <a href="#home" class="nav-logo">Subigya<span>.</span>Prasai</a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <section id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-tag">Cybersecurity & Data Analytics Student</div>
+        <h1 class="hero-name">I'm<br><em>Subigya</em> </h1>
+        <p class="hero-title">Cybersecurity & Data Analytics Student</p>
+        <p class="hero-bio">
+          I investigate security risks, analyze data patterns, and build practical tools that turn logs, alerts, and datasets into clear insights.
+        </p>
+        <a href="#projects" class="hero-cta">
+          View my projects
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- PFP -->
+      <div class="pfp-wrap">
+        <div class="pfp-ring" onclick="document.getElementById('pfp-input').click()" title="Click to upload your photo">
+          <div class="pfp-inner">
+            <img id="pfp-img" src="" alt="Profile photo"/>
+            <div class="pfp-placeholder" id="pfp-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+              </svg>
+              <span>Click to<br>add photo</span>
+            </div>
+          </div>
+        </div>
+        <input type="file" id="pfp-input" accept="image/*"/>
+        <span class="pfp-label">Profile photo</span>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <div class="section-heading">
+      <span class="section-tag">Security + Analytics</span>
+      <h2 class="section-title">About Me</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Hi! I’m a cybersecurity and data analytics student focused on protecting systems and making sense of complex data.
+        </p>
+        <p>
+          I enjoy working with Python, SQL, dashboards, network traffic, threat intelligence, and security fundamentals like vulnerability management and incident response.
+        </p>
+        <p>
+          I’m building a portfolio of hands-on projects in security monitoring, data visualization, and analytical problem solving.
+        </p>
+        <div class="skills-grid">
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">SQL</span>
+          <span class="skill-pill">Data Visualization</span>
+          <!-- <span class="skill-pill">Power BI / Tableau</span> -->
+          <span class="skill-pill">Wireshark</span>
+          <span class="skill-pill">Linux</span>
+          <!-- <span class="skill-pill">SIEM Basics</span> -->
+          <!-- <span class="skill-pill">Risk Analysis</span> -->
+        </div>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-num">0</div>
+          <div class="stat-label">Security labs completed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">∞</div>
+          <div class="stat-label">Threat-hunting mindset</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">1st</div>
+          <div class="stat-label">Year learning</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">☕</div>
+          <div class="stat-label">Logs reviewed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <div id="projects">
+    <div class="inner">
+      <div class="section-heading">
+        <span class="section-tag">Case studies + labs</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Project cards injected here by JS -->
+        <div class="project-card add-card" onclick="openModal()">
+          <div class="add-icon">+</div>
+          <div>
+            <strong>Add your first lab/project</strong>
+            <p>Click to showcase a security or analytics project</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="section-heading" style="align-items:center;">
+        <span class="section-tag">Get in touch</span>
+        <div class="section-line"></div>
+      </div>
+      <h2 class="contact-headline">Let's turn data into <em>defense</em>.</h2>
+      <p class="contact-sub">
+        Whether you have an internship opportunity, project idea, or collaboration in cybersecurity or analytics — my inbox is open.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:subigyaprasai2015@gmail.com" class="contact-btn primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/>
+          </svg>
+          Contact me
+        </a>
+        <a href="https://github.com/subigya-prasai" class="contact-btn ghost">GitHub</a>
+        <a href="https://www.linkedin.com/in/subigya-prasai-724a17376/" class="contact-btn ghost">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Subigya. Cybersecurity & Data Analytics Portfolio.</p>
+  <a href="#home">Back to top ↑</a>
+</footer>
+
+
+<div class="modal-overlay" id="modal" onclick="closeModalOutside(event)">
+  <div class="modal">
+    <h3>Add a Security / Analytics Project</h3>
+    <label>Project Title</label>
+    <input type="text" id="p-title" placeholder="e.g. Network Traffic Analysis Lab"/>
+    <label>Category / Type</label>
+    <input type="text" id="p-tag" placeholder="e.g. Cybersecurity, Data Analytics, SIEM Lab"/>
+    <label>Description</label>
+    <textarea id="p-desc" rows="3" placeholder="What did you analyze, secure, automate, or discover?"></textarea>
+    <label>Tech Stack (comma separated)</label>
+    <input type="text" id="p-stack" placeholder="e.g. Python, SQL, Wireshark, Power BI"/>
+    <label>Project Link (optional)</label>
+    <input type="text" id="p-link" placeholder="https://github.com/..."/>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeModal()">Cancel</button>
+      <button class="btn-add" onclick="addProject()">Add Project</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
